@@ -1,2 +1,2 @@
-# Jir-Script
+# Jira-Script
 Some scripts for Jira
