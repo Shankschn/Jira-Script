@@ -3,5 +3,5 @@
  
 SRC_PATH=/data/jira_wiki_backup
 DST_PATH=/data/jira_wiki_backup_old
-SYNC_LOG=/data/sync.log
+RSYNC_LOG=/data/rsync.log
 rsync -av --ignore-existing --delete ${SRC_PATH}/  ${DST_PATH}/ &>> ${RSYNC_LOG}
