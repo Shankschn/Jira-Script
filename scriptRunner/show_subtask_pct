@@ -1,9 +1,3 @@
-import com.atlassian.jira.component.ComponentAccessor
-import com.atlassian.jira.issue.fields.CustomField
-import com.atlassian.jira.issue.Issue;
-import com.atlassian.jira.issue.MutableIssue;
-import com.atlassian.jira.issue.IssueManager;
-
 def subTaskNum = 0
 issue.getSubTaskObjects()?.each { subtask ->
     subTaskNum += 1
