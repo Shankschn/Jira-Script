@@ -35,9 +35,6 @@ if (issue.issueType.name == "子任务") { // issue.issueType.name
             jg = jg + "%"
 
             tgtField.updateValue(null, issue, new ModifiedValue(issue.getCustomFieldValue(tgtField), jg), changeHolder)
-        } else {
-            tgtField.updateValue(null, issue, new ModifiedValue(issue.getCustomFieldValue(tgtField), "0%"), changeHolder)
         }
-
     }
 }
