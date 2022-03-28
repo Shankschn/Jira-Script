@@ -22,8 +22,14 @@ CustomField cf = ComponentAccessor.getCustomFieldManager().getCustomFieldObject(
 String jf_rq = issue.getCustomFieldValue(cf).toString().substring(0, 10)
 log.warn("交付日期：" + jf_rq)
 
+// Simple scripted validator ScriptRunner
 if (ct_sj>xz_sj && jf_rq==jr_rq) {
     return false
 } else {
     return true
 }
+
+// Custom script validator ScriptRunner
+//if (ct_sj>xz_sj && jf_rq==jr_rq) {
+//    throw new InvalidInputException("交付日期错误。当前时间在 14 点之后时，只能选择明日或之后的日期。")
+//}
