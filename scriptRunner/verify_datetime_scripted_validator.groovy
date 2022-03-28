@@ -11,7 +11,7 @@ Timestamp ct_sj = Timestamp.valueOf(sdf.format(date))
 String tmp1 = ct_sj.toString()
 log.warn("创建时间：" + tmp1)
 
-def tmp2 = tmp1.substring(0, 11) + "10:00:00.0"
+def tmp2 = tmp1.substring(0, 11) + "14:00:00.0"
 log.warn("限制时间：" + tmp2)
 Timestamp xz_sj = Timestamp.valueOf(tmp2);
 
